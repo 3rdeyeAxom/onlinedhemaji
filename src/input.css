@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+@media (max-width: 576px) {
+    .content {
+        padding-top: 51px;
+    }
+}
+
+@media (min-width: 577px) {
+  .pt-scroll {
+    padding-top: 51px;
+  }
+
+  .nav-sticky {
+    position: fixed!important;
+    min-width: 100%;
+    top: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    transition: all .25s ease-in;
+    z-index: 1;
+  }
+}
+
+
+
+
+@layer components {
+
+
+
+    @media (max-width: 576px) {
+        .content {
+            padding-top: 51px;
+        }
+    }
+    
+    @media (min-width: 577px) {
+      .pt-scroll {
+        padding-top: 51px;
+      }
+    
+      .nav-sticky {
+        position: fixed!important;
+        min-width: 100%;
+        top: 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+        transition: all .25s ease-in;
+        z-index: 1;
+      }
+    }
+    
+
+    /* HAMBURGER MENU */
+
+.hamburger {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    transition: all 0.25s;
+  }
+  
+  .hamburger__top-bun,
+  .hamburger__bottom-bun {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #CA8A04;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger:hover [class*="-bun"] {
+    background: #CA8A04;
+  }
+  
+  .hamburger__top-bun {
+    transform: translateY(-5px);
+  }
+  
+  .hamburger__bottom-bun {
+    transform: translateY(3px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(-1px);
+  }
+  
+  .open .hamburger__top-bun {
+    transform:
+      rotate(45deg)
+      translateY(0px);
+  }
+  
+  .open .hamburger__bottom-bun {
+    transform:
+      rotate(-45deg)
+      translateY(0px);
+  }
+
+
+
+
+  .trending-class{
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translate( -50%);
+    font-size: .5rem;
+    border: 1px solid #70FF90;
+    border-radius: 8px;
+    padding-block: 1px;
+    padding-inline: 8px;
+    background-color: white;
+  }
+}

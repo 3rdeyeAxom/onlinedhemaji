@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="antialiased font-poppins">
+    <!-- Header -->
+    <header
+      id="top"
+      class="w-full z-50 flex flex-col fixed sm:relative bg-white pin-t pin-r pin-l sm:max-w-4xl mx-auto"
+    >
+      <nav
+        id="site-menu"
+        class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-3 bg-yellow-50 shadow sm:shadow-none"
+      >
+        <div
+          class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center"
+        >
+          <div class="relative">
+            <div class="flex flex-row gap-2 items-center">
+              <div class="bg-yellow-100 p-2 rounded-full">
+                <img src="./src/img/logo__icon.png" alt="" />
+              </div>
+              <a href="#" class="no-underline py-1"
+                ><h1 class="font-bold text-lg tracking-widest text-yellow-900">
+                  ONLINESOLUTION
+                </h1></a
+              >
+            </div>
+            <div
+              class="absolute text-center left-1/2 transform -translate-x-1/2 top-[26px] text-blue-950 font-poppins font-bold tracking-wider text-[10px]"
+            >
+              DHEMAJI
+            </div>
+          </div>
+          <button
+            id="menuBtn"
+            class="hamburger block sm:hidden focus:outline-none"
+            type="button"
+            onclick="navToggle();"
+          >
+            <span class="hamburger__top-bun"></span
+            ><span class="hamburger__bottom-bun"></span>
+          </button>
+        </div>
+        <div
+          id="menu"
+          class="transition w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden"
+        >
+          <a
+            class="text-dark font-poppins text-yellow-700 font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2"
+            href="./index.html"
+            target=""
+            >Home</a
+          >
+          <a
+            class="text-dark font-poppins text-yellow-700 font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2"
+            href="./src/services.html"
+            target="_blank"
+            >Services</a
+          >
+          <a
+            class="text-dark font-poppins text-yellow-700 font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+            href="#bottom"
+            >Blog</a
+          >
+
+          <a
+            class="text-dark font-poppins text-yellow-700 font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2"
+            href="https://ttntm.me/blog/tailwind-responsive-menu/"
+            target="_blank"
+            >About Us</a
+          >
+
+          <a
+            class="text-dark font-poppins text-yellow-700 font-bold hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2"
+            href="./pages/contactus.html"
+            >Contact Us</a
+          >
+          <div class="mb-3 font-roboto sm:hidden">
+            For More Info
+            <div
+              class="inline-flex justify-center items-center bg-yellow-400 py-2 px-3 space-x-2 rounded-lg"
+            >
+              <img src="./src/img/call__icon.png" alt="" />
+              <a href="#"
+                ><span class="font-semibold text-yellow-950"
+                  >7002322176</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Hero Section -->
+ 
+    <main id="Mobile__Version" class="pt-[72px] sm:pt-6 sm:max-w-4xl mx-auto">
+     
+      
+      <div class="swiper mySwiper px-2 py-5 -z-10">
+        <div class="swiper-wrapper mb-3 ">
+          <div
+            class="swiper-slide rounded-md pr-3 flex justify-center items-center "
+          >
+            <img src="./src/img/banner/3rd__pic.png" class="h-auto max-w-full object-contain" alt="">
+          </div>
+          <div
+            class="swiper-slide rounded-md pr-3 w-auto "
+          >
+            <img src="./src/img/banner/3rd__pic.png" class="h-auto max-w-full " alt="">
+          </div>
+          
+
+         
+
+          
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- End Hero Section -->
+
+      <!-- Contact menu -->
+      <div class="px-4 py-[28px]">
+        <div
+          class="bg-green-100 rounded flex flex-row justify-between py-[14px] px-[16px]"
+        >
+          <div class="flex flex-row items-center space-x-2">
+            <div class="bg-green-200 p-2 rounded-lg">
+              <img src="/src/img/whatsapp__logo.png" alt="" />
+            </div>
+            <p class="text-green-900 font-semibold font-roboto">7002322176</p>
+          </div>
+
+          <div class="bg-yellow-50 rounded-lg py-2 px-2 w-[50%]">
+            <ul class="flex flex-row justify-between sm:space-x-4 items-center">
+              <li>
+                <a href="#"
+                  ><img src="/src/img/instagram__logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="/src/img/logos_messenger.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/src/img/telegram__logo.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/src/img/discord__logo.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/src/img/youtube__logo.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Menu -->
+
+      <!-- Digital Marketing -->
+      <div class="px-4">
+        <div class="bg-transparent border-[1px] border-yellow-600">
+          <div class="py-2 px-2 flex flex-row justify-between">
+            <div class="flex flex-row gap-2 items-center">
+              <img src="./src/img/digital__marketing__logo.png" alt="" />
+              <p class="font-roboto text-sm font-medium">Digital Marketing</p>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <p class="font-roboto text-xs">View All</p>
+              <div>
+                <img src="./src/img/right__arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper mySwiper1 px-2 py-5 -z-10">
+            <div class="swiper-wrapper flex flex-row px-[18px] mb-3">
+              <div
+                class="swiper-slide bg-green-50 flex flex-col justify-center items-center rounded-2xl mb-[18px] shadow-2xl shadow-green-300"
+              >
+                <div
+                  class="bg-green-300 py-2 px-[16px] mx-[16px] mt-[20px] mb-4 rounded-lg"
+                >
+                  <img
+                    src="./src/img/computer__icon.png"
+                    alt=""
+                    class="self-center"
+                  />
+                </div>
+                <p
+                  class="text-[10px] text-center text-green-900 font-semibold mb-7"
+                >
+                  WEBDESIGN
+                </p>
+              </div>
+
+              <div
+                class="swiper-slide bg-red-50 flex flex-col justify-center items-center rounded-2xl mb-[18px] shadow-2xl shadow-red-300"
+              >
+                <div
+                  class="bg-red-300 py-2 px-[16px] mx-[16px] mt-[20px] mb-4 rounded-lg"
+                >
+                  <img
+                    src="./src/img/computer__icon.png"
+                    alt=""
+                    class="self-center"
+                  />
+                </div>
+                <p
+                  class="text-[10px] text-center text-red-900 font-semibold mb-7"
+                >
+                  DEVELOPE
+                </p>
+              </div>
+
+              <div
+                class="swiper-slide bg-purple-50 flex flex-col justify-center items-center rounded-2xl mb-[18px] shadow-2xl shadow-purple-300"
+              >
+                <div
+                  class="bg-purple-300 py-2 px-[16px] mx-[16px] mt-[20px] mb-4 rounded-lg"
+                >
+                  <img
+                    src="./src/img/computer__icon.png"
+                    alt=""
+                    class="self-center"
+                  />
+                </div>
+                <p
+                  class="text-[10px] text-center text-purple-900 font-semibold mb-7"
+                >
+                  SEO OPTIMIZE
+                </p>
+              </div>
+
+              <div
+                class="swiper-slide bg-green-50 flex flex-col justify-center items-center rounded-2xl mb-[18px] shadow-2xl shadow-green-300"
+              >
+                <div
+                  class="bg-green-300 py-2 px-[16px] mx-[16px] mt-[20px] mb-4 rounded-lg"
+                >
+                  <img
+                    src="./src/img/computer__icon.png"
+                    alt=""
+                    class="self-center"
+                  />
+                </div>
+                <p
+                  class="text-[10px] text-center text-green-900 font-semibold mb-7"
+                >
+                  WEBDESIGN
+                </p>
+              </div>
+
+              <div
+                class="swiper-slide bg-green-50 flex flex-col justify-center items-center rounded-2xl mb-[18px] shadow-2xl shadow-green-300"
+              >
+                <div
+                  class="bg-green-300 py-2 px-[16px] mx-[16px] mt-[20px] mb-4 rounded-lg"
+                >
+                  <img
+                    src="./src/img/computer__icon.png"
+                    alt=""
+                    class="self-center"
+                  />
+                </div>
+                <p
+                  class="text-[10px] text-center text-green-900 font-semibold mb-7"
+                >
+                  WEBDESIGN
+                </p>
+              </div>
+
+              <div
+                class="swiper-slide bg-green-50 flex flex-col justify-center items-center rounded-2xl mb-[18px] shadow-2xl shadow-green-300"
+              >
+                <div
+                  class="bg-green-300 py-2 px-[16px] mx-[16px] mt-[20px] mb-4 rounded-lg"
+                >
+                  <img
+                    src="./src/img/computer__icon.png"
+                    alt=""
+                    class="self-center"
+                  />
+                </div>
+                <p
+                  class="text-[10px] text-center text-green-900 font-semibold mb-7"
+                >
+                  WEBDESIGN
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Digital Marketing -->
+
+      <!-- Latest Updates -->
+
+      <div class="px-4 mt-7">
+        <div class="bg-transparent">
+          <div class="py-2 px-2 flex flex-row justify-between">
+            <div class="flex flex-row gap-2 items-center">
+              <img src="./src/img/loudspeaker__icon.png" alt="" />
+              <p class="font-roboto text-sm font-medium">Latest Updates</p>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <p class="font-roboto text-xs">View All</p>
+              <div>
+                <img src="./src/img/right__arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper mb-3 py-4 px-4">
+              <div
+                class="swiper-slide mr-4 card relative h-[128px] shadow-lg rounded-t-sm"
+              >
+                <p class="trending-class">Trending</p>
+                <div
+                  class="bg-green-50 w-full h-[54px] rounded-t-sm flex flex-row items-center px-2 py-2"
+                >
+                  <div
+                    class="w-[39px] h-[39px] rounded-full bg-green-200"
+                  ></div>
+                  <h3 class="font-roboto text-lg ml-2 text-slate-700">
+                    this is my first blog post
+                  </h3>
+                </div>
+                <div>
+                  <div class="flex flex-row justify-between px-2 py-2">
+                    <p class="text-xs text-green-900 font-semibold">
+                      Start Date : 01-10-1993
+                    </p>
+                    <p class="text-xs text-green-900 font-semibold">
+                      Last Date : 01-10-2024
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide mr-4 card relative w-[90%] h-[128px] shadow-lg rounded-t-sm"
+              >
+                <p class="trending-class">Trending</p>
+                <div
+                  class="bg-green-50 w-full h-[54px] rounded-t-sm flex flex-row items-center px-2 py-2"
+                >
+                  <div
+                    class="w-[39px] h-[39px] rounded-full bg-green-200"
+                  ></div>
+                  <h3 class="font-roboto text-lg ml-2 text-slate-700">
+                    this is my first blog post
+                  </h3>
+                </div>
+                <div>
+                  <div class="flex flex-row justify-between px-2 py-2">
+                    <p class="text-xs text-green-900 font-semibold">
+                      Start Date : 01-10-1993
+                    </p>
+                    <p class="text-xs text-green-900 font-semibold">
+                      Last Date : 01-10-2024
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide mr-4 card relative w-[90%] h-[128px] shadow-lg rounded-t-sm"
+              >
+                <p class="trending-class">Trending</p>
+                <div
+                  class="bg-green-50 w-full h-[54px] rounded-t-sm flex flex-row items-center px-2 py-2"
+                >
+                  <div
+                    class="w-[39px] h-[39px] rounded-full bg-green-200"
+                  ></div>
+                  <h3 class="font-roboto text-lg ml-2 text-slate-700">
+                    this is my first blog post
+                  </h3>
+                </div>
+                <div>
+                  <div class="flex flex-row justify-between px-2 py-2">
+                    <p class="text-xs text-green-900 font-semibold">
+                      Start Date : 01-10-1993
+                    </p>
+                    <p class="text-xs text-green-900 font-semibold">
+                      Last Date : 01-10-2024
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <!-- End Latest Updates -->
+
+      <div class="px-4 mt-7">
+        <dir class="w-full bg-blue-900 grid place-content-center rounded">
+          <h1 class="font-roboto py-2 text-white">E-SERVICES DHEMAJI</h1>
+        </dir>
+      </div>
+
+      <!-- Popular Services -->
+      <div class="px-4 mt-7">
+        <div class="bg-yellow-50 border-[1px] border-yellow-600">
+          <div class="pt-2 px-2 flex flex-row justify-between">
+            <div class="flex flex-row gap-2 items-center">
+              <img src="./src/img/star__icon.png" alt="" />
+              <p class="font-roboto text-sm font-medium">Popular Services</p>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <p class="font-roboto text-xs">View All</p>
+              <div>
+                <img src="./src/img/right__arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="popular__label flex flex-row flex-wrap gap-2 py-3 mx-[18px]"
+          >
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-blue-50 py-1 px-2 rounded-lg text-blue-900 border-[1px] border-blue-600"
+            >
+              JOB APPLY
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-rose-50 py-1 px-2 rounded-lg text-rose-900 border-[1px] border-rose-600"
+            >
+              PAN CARD
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-purple-50 py-1 px-2 rounded-lg text-purple-900 border-[1px] border-purple-600"
+            >
+              VOTER CARD
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-teal-50 py-1 px-2 rounded-lg text-teal-900 border-[1px] border-teal-600"
+            >
+              E-KHAJANA
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-lime-50 py-1 px-2 rounded-lg text-lime-900 border-[1px] border-lime-600"
+            >
+              EMPLOYMENT EXCHANGE
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-zinc-50 py-1 px-2 rounded-lg text-zinc-900 border-[1px] border-zinc-600"
+            >
+              VOTER CARD
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-green-50 py-1 px-2 rounded-lg text-green-900 border-[1px] border-green-600"
+            >
+              ESHRAM CARD
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-blue-50 py-1 px-2 rounded-lg text-blue-900 border-[1px] border-blue-600"
+            >
+              AYUSMAN CARD
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-yellow-50 py-1 px-2 rounded-lg text-yellow-900 border-[1px] border-yellow-600"
+            >
+              MORE SERVICES
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Popular Services -->
+
+      <!-- Insurances Services -->
+
+      <div class="px-4 mt-7">
+        <div class="bg-yellow-50 border-[1px] border-yellow-600">
+          <div class="pt-2 px-2 flex flex-row justify-between">
+            <div class="flex flex-row gap-2 items-center">
+              <img src="./src/img/medikit__icon.png" alt="" />
+              <p class="font-roboto text-sm font-medium">Insurance Services</p>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <p class="font-roboto text-xs">View All</p>
+              <div>
+                <img src="./src/img/right__arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="popular__label flex flex-row flex-wrap gap-2 py-3 mx-[18px]"
+          >
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-blue-50 py-1 px-2 rounded-lg text-blue-900 border-[1px] border-blue-600"
+            >
+              LIC
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-rose-50 py-1 px-2 rounded-lg text-rose-900 border-[1px] border-rose-600"
+            >
+              HEALTH INSURANCE
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-zinc-50 py-1 px-2 rounded-lg text-zinc-900 border-[1px] border-zinc-600"
+            >
+              AGRICULTURE INSURANCES
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-purple-50 py-1 px-2 rounded-lg text-purple-900 border-[1px] border-purple-600"
+            >
+              VEHICLE INSURANCE
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-teal-50 py-1 px-2 rounded-lg text-teal-900 border-[1px] border-teal-600"
+            >
+              FIRST PARTY INSURANCE
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-lime-50 py-1 px-2 rounded-lg text-lime-900 border-[1px] border-lime-600"
+            >
+              THIRD PARTY INSURANCE
+            </div>
+
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-yellow-50 py-1 px-2 rounded-lg text-yellow-900 border-[1px] border-yellow-600"
+            >
+              MORE SERVICES
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Insurance Services -->
+
+      <!-- Vehicle Services -->
+      <div class="px-4 mt-7">
+        <div class="bg-yellow-50 border-[1px] border-yellow-600">
+          <div class="pt-2 px-2 flex flex-row justify-between">
+            <div class="flex flex-row gap-2 items-center">
+              <img src="./src/img/car__icon.png" alt="" />
+              <p class="font-roboto text-sm font-medium">Vehicle Services</p>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <p class="font-roboto text-xs">View All</p>
+              <div>
+                <img src="./src/img/right__arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="popular__label flex flex-row flex-wrap gap-2 py-3 mx-[18px]"
+          >
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-rose-50 py-1 px-2 rounded-lg text-rose-900 border-[1px] border-rose-600"
+            >
+              LEARNER LICENSE
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-green-50 py-1 px-2 rounded-lg text-green-900 border-[1px] border-green-600"
+            >
+              DRIVING LICENSE
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-zinc-50 py-1 px-2 rounded-lg text-zinc-900 border-[1px] border-zinc-600"
+            >
+              RC REGISTRATION
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-purple-50 py-1 px-2 rounded-lg text-purple-900 border-[1px] border-purple-600"
+            >
+              OWNER TRANSFER
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-blue-50 py-1 px-2 rounded-lg text-blue-900 border-[1px] border-blue-600"
+            >
+              DUPLICATE RC APPLY
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-lime-50 py-1 px-2 rounded-lg text-lime-900 border-[1px] border-lime-600"
+            >
+              BIKE INSURANCES
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-teal-50 py-1 px-2 rounded-lg text-teal-900 border-[1px] border-teal-600"
+            >
+              E-RIKSAW INSURANCES
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-yellow-50 py-1 px-2 rounded-lg text-yellow-900 border-[1px] border-yellow-600"
+            >
+              PRIVATE CAR INSURENCES
+            </div>
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-blue-50 py-1 px-2 rounded-lg text-blue-900 border-[1px] border-blue-600"
+            >
+              MORE SERVICES
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Vehicle Services -->
+
+      <!-- Contact Menu -->
+
+      <div class="px-4 py-[28px]">
+        <div
+          class="bg-lime-100 rounded flex flex-row justify-between py-[14px] px-[16px]"
+        >
+          <div class="flex flex-row items-center gap-1">
+            <div class="bg-lime-200 p-2 rounded-lg">
+              <img src="/src/img/whatsapp__logo.png" alt="" />
+            </div>
+            <p class="text-lime-900 font-semibold font-roboto">7002322176</p>
+          </div>
+
+          <div class="bg-yellow-50 rounded-lg py-2 px-2 w-[50%]">
+            <ul class="flex flex-row justify-between">
+              <li>
+                <a href="#"
+                  ><img src="/src/img/instagram__logo.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="/src/img/logos_messenger.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/src/img/telegram__logo.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/src/img/discord__logo.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/src/img/youtube__logo.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Contact Menu -->
+
+      <!-- Other Services -->
+
+      <div class="px-4 mt-7">
+        <div class="bg-yellow-50 border-[1px] border-yellow-600">
+          <div class="pt-2 px-2 flex flex-row justify-between">
+            <div class="flex flex-row gap-2 items-center">
+              <img src="./src/img/other__icon.png" alt="" />
+              <p class="font-roboto text-sm font-medium">Other Services</p>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <p class="font-roboto text-xs">View All</p>
+              <div>
+                <img src="./src/img/right__arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="popular__label flex flex-row flex-wrap gap-2 py-3 mx-[18px]"
+          >
+            <!-- <div class=" font-roboto font-semibold text-sm text-center bg-blue-50 py-1 px-2 rounded-lg text-blue-900  border-[1px] border-blue-600">JOB APPLY</div>
+      <div class=" font-roboto font-semibold text-sm text-center bg-rose-50 py-1 px-2 rounded-lg text-rose-900  border-[1px] border-rose-600">PAN CARD</div>
+      <div class=" font-roboto font-semibold text-sm text-center bg-purple-50 py-1 px-2 rounded-lg text-purple-900  border-[1px] border-purple-600">VOTER CARD</div>
+      <div class=" font-roboto font-semibold text-sm text-center bg-teal-50 py-1 px-2 rounded-lg text-teal-900  border-[1px] border-teal-600">E-KHAJANA</div>
+      <div class=" font-roboto font-semibold text-sm text-center bg-zinc-50 py-1 px-2 rounded-lg text-zinc-900  border-[1px] border-zinc-600">VOTER CARD</div>
+      <div class=" font-roboto font-semibold text-sm text-center bg-lime-50 py-1 px-2 rounded-lg text-lime-900  border-[1px] border-lime-600">EMPLOYMENT EXCHANGE</div>
+      <div class=" font-roboto font-semibold text-sm text-center bg-green-50 py-1 px-2 rounded-lg text-green-900  border-[1px] border-green-600">ESHRAM CARD</div>
+      <div class=" font-roboto font-semibold text-sm text-center bg-blue-50 py-1 px-2 rounded-lg text-blue-900  border-[1px] border-blue-600">AYUSMAN CARD</div> -->
+            <div
+              class="font-roboto font-semibold text-sm text-center bg-yello-50 py-1 px-2 rounded-lg text-yellow-900 border-[1px] border-yellow-600"
+            >
+              MORE SERVICES COMING SOON
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Other Services -->
+    </main>
+
+    <!-- footer -->
+
+    <footer class="max-w-4xl mx-auto ">
+      <div class="bg-blue-700 mt-6">
+        <div
+          class="flex flex-col sm:flex-row sm:justify-around sm:pb-6 items-center"
+        >
+          <div class="relative pt-7">
+            <div class="flex flex-row gap-2 items-center">
+              <div class="bg-yellow-100 p-2 rounded-full">
+                <img src="./src/img/logo__icon.png" alt="" />
+              </div>
+              <a href="#" class="no-underline py-1"
+                ><h1 class="font-bold text-lg tracking-widest text-white">
+                  ONLINESOLUTION
+                </h1></a
+              >
+            </div>
+            <div
+              class="absolute text-center left-1/2 transform -translate-x-1/2 top-[26px] text-white font-poppins font-bold tracking-wider text-[10px]"
+            >
+              DHEMAJI
+            </div>
+          </div>
+          <div class="mt-4 text-center sm:text-left">
+            <h2 class="text-white text-xl font-bold">Quick Links</h2>
+            <p class="text-xm text-gray-300 font-semibold">
+              Services
+            </p>
+            <p class="text-xm text-gray-300 font-semibold">Blog</p>
+            <p
+              class="text-xm inline-block text-gray-300 border-b-[1px] border-yellow-300 font-bold"
+            >
+              Hire Me
+            </p>
+            <p class="text-xm text-gray-300 font-semibold">
+              About Us
+            </p>
+            <p class="text-xm text-gray-300 font-semibold">
+              Contact Us
+            </p>
+          </div>
+          <div class="my-4 text-center sm:text-left">
+            <h2 class="text-white text-xl font-bold">Office Address</h2>
+            <p class= "text-gray-300">
+              Near Medical Chariali, <br />
+              Silapathar, Dhemaji <br />
+              Assam <br />
+              787059
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid place-content-center bg-blue-800 py-3 divide-y divide-solid-2 divide-yellow-900"
+      >
+        <p class="text-sm text-gray-100 font-semibold">
+          &copy; ONLINESOLUTION <span>Develope By UTPAL DAS</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./src/app.js"></script>
+  </body>
+</html>
