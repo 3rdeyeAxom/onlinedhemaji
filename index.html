@@ -446,7 +446,9 @@
               <div class="swiper-slide flex flex-col bg-[#051937] px-3 py-2 font-Mon rounded-md">
                 
                 <div class="inline-flex text-center items-center space-x-1" >
-                  <i class="ri-briefcase-line text-yellow-400"></i>
+                  <div class="w-auto h-8 leading-8 text-center align-middle">
+                    <i class="ri-briefcase-line text-yellow-400"></i>
+                  </div>
                   <p class="text-sm align-middle text-white tracking-wider font-bold ">JOB</p>
                 </div>
                 <hr>
@@ -463,7 +465,9 @@
            <div class="swiper-slide flex flex-col bg-[#23282F] px-3 py-2 font-Mon rounded-md">
                 
             <div class="inline-flex text-center items-center space-x-1" >
-              <i class="ri-briefcase-line text-yellow-400"></i>
+              <div class="w-auto h-8 leading-8 text-center align-middle">
+                <i class="ri-briefcase-line text-yellow-400"></i>
+              </div>
               <p class="text-sm align-middle text-white tracking-wider font-bold ">JOB</p>
             </div>
             <hr>
@@ -480,8 +484,10 @@
        <div class="swiper-slide flex flex-col bg-[#0451C3] px-3 py-2 font-Mon rounded-md">
                 
         <div class="inline-flex text-center items-center space-x-1" >
-          <i class="ri-briefcase-line text-yellow-400"></i>
-          <p class="text-sm align-middle text-white tracking-wider font-bold ">JOB</p>
+          <div class="w-auto h-8 leading-8 text-center align-middle">
+            <i class="ri-briefcase-line text-yellow-400"></i>
+          </div>
+          <p class="text-sm text-center text-white tracking-wider font-bold ">JOB</p>
         </div>
         <hr>
         <div class="inline-flex flex-col tracking-wide">
@@ -767,10 +773,10 @@
     <footer class="sm:max-w-4xl mx-auto">
       <div class="bg-blue-700 mt-6 px-6">
         <div
-          class=" sm:flex sm:flex-row sm:justify-around sm:pb-6 items-center"
+          class=" grid gap-6 sm:pb-6 place-content-center"
         >
-          <div class="relative pt-7">
-            <div class="flex flex-row gap-2 items-center">
+          <div class="relative pt-7 flex flex-col items-center gap-2">
+            <div class="flex flex-row gap-2  items-center">
               <div class="bg-yellow-100 p-2 rounded-full">
                 <img src="./src/img/logo__icon.png" alt="" />
               </div>
@@ -780,9 +786,33 @@
                 </h1></a
               >
             </div>
+
+            <!-- ============= Contact Menu ============== -->
+            <div>
+              <div
+      class="bg-green-100 rounded flex flex-row justify-between min-w-full sm:max-w-fit sm:gap-4 py-4 px-3"
+    >
+      <div class="grid place-items-center">
+        <a href="https://wa.me/917002322176?text=Welcome%20to%20our%20service%20portal%2C%20we%20are%20happy%20to%20assist%20you%20in%20any%20way%20we%20can,%20Thanku." class="flex flex-row items-center space-x-2 px-2" >
+          <div class="bg-[#3bf652] flex flex-row space-x-1 justify-center items-center py-1 px-3 rounded-3xl shadow-md">
+            <i class="ri-whatsapp-line text-[1.75rem] transition-colors text-green-900 hover:text-yellow-700"></i>
+            <p class="text-[#121512] font-poppins font-semibold uppercase text-sm">Whatsapp</p>
+           </div>
+        </a>
+      </div>
+
+      <div class="flex flex-row justify-center items-center gap-2">
+        <div class="w-8 h-8 leading-8 text-center align-middle ring-2 ring-yellow-300 rounded-full"><a href="" class="inline-block hover:animate-bounce"><i class="ri-facebook-box-line text-2xl text-blue-700"></i></a></div>
+        <div class="w-8 h-8 leading-8 text-center align-middle ring-2 ring-yellow-300 rounded-full"><a href="" class="inline-block hover:animate-bounce"><i class="ri-telegram-line text-2xl text-sky-700"></i></a></div>
+        <div class="w-8 h-8 leading-8 text-center align-middle ring-2 ring-yellow-300 rounded-full"><a href="" class="inline-block hover:animate-bounce"><i class="ri-instagram-line text-2xl text-rose-400"></i></a></div>
+        <div class="w-8 h-8 leading-8 text-center align-middle ring-2 ring-yellow-300 rounded-full"><a href="" class="inline-block hover:animate-bounce"><i class="ri-youtube-line text-2xl text-red-400"></i></a></div>
+        <div></div>
+      </div>
+    </div>
+            </div>
             
           </div>
-          <div class="mt-4 ">
+          <div class="mt-4 grid place-items-center">
             <h2 class="text-white text-xl font-bold">Quick Links</h2>
             <p class="text-xm text-gray-300 font-semibold">Services</p>
             <p class="text-xm text-gray-300 font-semibold">Blog</p>
@@ -794,9 +824,9 @@
             <p class="text-xm text-gray-300 font-semibold">About Us</p>
             <p class="text-xm text-gray-300 font-semibold">Contact Us</p>
           </div>
-          <div class="my-4 pb-4 ">
+          <div class="my-4 pb-4 grid place-items-center ">
             <h2 class="text-white text-xl font-bold">Office Address</h2>
-            <p class="text-gray-300">
+            <p class="text-gray-300 text-center">
               Near Medical Chariali, <br />
               Silapathar, Dhemaji <br />
               Assam <br />
